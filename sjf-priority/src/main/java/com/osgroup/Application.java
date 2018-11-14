@@ -53,6 +53,7 @@ public class Application {
                         System.out.println("J:"+individualProcesses.get(t));
                         swap(individualProcesses,t,y);
                         individualProcesses.get(t).setArrivalTime(t);
+                        individualProcesses.get(y).setArrivalTime(y);
                         for (CustomProcess item:
                                 individualProcesses) {
                             System.out.print(item.getJobName()+",");
@@ -65,6 +66,7 @@ public class Application {
                             System.out.println("J:"+individualProcesses.get(t));
                             swap(individualProcesses,t,y);
                             individualProcesses.get(t).setArrivalTime(t);
+                            individualProcesses.get(y).setArrivalTime(y);
                             for (CustomProcess item:
                                     individualProcesses) {
                                 System.out.print(item.getJobName()+",");
